@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IskoFINDER</title>
+    <link rel="stylesheet" href="IskoFINDER.css">
+    <link rel="stylesheet" href="./package/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>    
+            <h1 id="textLogo">IskoFINDER</h1>
+            <div id="searcherBar">
+                <input type="text" id="searchBar" placeholder="Find a Scholarship">
+                <button onclick="toSignUp()" id="searchBtn">Search</button>
+            </div>
+
+            <div id="navbtns">
+                <a href="#homepage">Home</a>
+                <a href="#servicepage">Services</a>
+                <a href="#servicepage" id="aboutUsLink">About Us</a>
+                <a href="#contactus">Contact Us</a>
+                <button onclick="toLogin()" id="loginBtn" style="color: #fff;">Log In</a></button>
+                <button id="darkModeToggle">Dark Mode</button>
+            </div>
+            
+            <button id="menuBtn">Menu</button>
+        </nav>
+    </header>
+
+    <section id="homepage">
+        <div id="hpTextContainer">
+            <h1 id="HPText">IskoFINDER</h1>
+            <p id="welcome-message">IskoFINDER is your friendly guide to finding the right scholarships for you. A buddy that helps you uncover the best financial opportunities for your college journey, all in one easy place!</p>
+            <div>
+                <button id="updateContentBtn">Update Content</button>
+                <button onclick="toServices()" id="exploreBtn"><a href="#servicepage">Let's Explore!</a></button>
+                <button onclick="toSignUp()" id="signupBtn"><a href="IskoFinderSignUp.html">Sign Up</a></button>
+            </div>
+         </div>
+    </section>
+
+    <section id="servicepage">
+        <div class="services mySwiper">
+            <h1>IskoFINDER Offers</h1>
+            <div class="servicesCarousel swiper-wrapper">
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Profile-Based Matching</h3>
+                    <img src="ProfileMatching.png" alt="Profile Matching">
+                    <p class="p">IskoFINDER matches students with relevant scholarships based on their unique needs and qualifications.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #edc484;">
+                        <a href="IskoFinderSignUp.html">Find a Match</a>
+                    </button>
+                </div>
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Simplified Searching</h3>
+                    <img src="EasySearching.png" alt="Simplified Searching">
+                    <p class="p">IskoFINDER connects students with matched scholarship opportunities, simplifying their search and application process.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #345b94;">
+                        <a href="IskoFinderSignUp.html">Search Now</a>
+                    </button>
+                </div>
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Application Analytics Dashboard</h3>
+                    <img src="ApplicationDashboard.png" alt="Application Analytics Dashboard">
+                    <p class="p">IskoFINDER offers an application analytics dashboard that tracks and displays students' progress, success rates, and key metrics for each scholarship application.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #aa3a46;">
+                        <a href="IskoFinderSignUp.html">Check Dashboard</a>
+                    </button>
+                </div>
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Progress Tracking</h3>
+                    <img src="ProgressTracker.png" alt="Application Analytics Dashboard">
+                    <p class="p">IskoFINDER allows students to track their progress on each application, ensuring that they stay on top of deadlines and requirements.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #edc484;">
+                        <a href="IskoFinderSignUp.html">Check Progress</a>
+                    </button>
+                </div>
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Application Planner</h3>
+                    <img src="ApplicationPlanner.png" alt="Application Analytics Dashboard">
+                    <p class="p">IskoFINDER helps students plan and manage multiple scholarship applications, balancing them with their academic schedule.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #345b94;">
+                        <a href="IskoFinderSignUp.html">Plan Application</a>
+                    </button>
+                </div>
+                <div class="srvcCarousel swiper-slide">
+                    <h3>Auto-Apply Feature</h3>
+                    <img src="AutoApply.png" alt="Application Analytics Dashboard">
+                    <p class="p">IskoFINDER allows students to pre-fill applications and submit them automatically as deadlines approach.</p>
+                    <button onclick="toSignUp()" class="srvcbtn" style="background-color: #aa3a46;">
+                        <a href="IskoFinderSignUp.html">Apply Now</a>
+                    </button>
+                </div>
+            </div>
+            <button onclick="toSignUp()" class="srvcbtn" style="background-color: grey;">
+                <a href="IskoFinderSignUp.html">More Services</a>
+            </button>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div id="acu">
+            <h1>Who We Are</h1>
+            <div id="aboutus">
+                <div class="dave">
+                    <img src="harley.jpg" alt="Harley Dave M. Pilaspilas" class="image">
+                    <h2 class="username">Dave</h2>
+                    <p class="profession">Head Programmer</p>
+                </div>
+                <div class="dave">
+                    <img src="prins.jpg" alt="Application Analytics Dashboard" class="image">
+                    <h2 class="username">Prins</h2>
+                    <p class="profession">Project Manager</p>
+                </div>
+            </div>
+
+            <h1>Contact Us</h1>
+            <div id="contactus">
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    
+                    <input type="email" id="email" name="email" placeholder="Email">
+
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number (ex. 0912345678)">
+                    
+                    <textarea id="message" name="message" placeholder="Message" rows="5"></textarea>
+                    
+                    <button type="submit" class="lndpgbtn">Send Message</button>
+                    <p id="success-message" class="success-message"></p>
+                </form>
+            </div>
+        </div>
+        <script src="./package/swiper-bundle.min.js"></script>
+        <script src="IskoFinder.js"></script>
+    </section>
+
+    <footer>
+        <p>© 2024 IskoFINDER. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

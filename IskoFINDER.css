@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Prins: Navigation Bar*/
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+nav h1 {
+    font-size: 50px;
+    color: #304d89;
+}
+
+nav h1:hover {
+    font-size: 50px;
+    color: #264072;
+}
+
+#menuBtn{
+    color: #fff;
+    background-color: #af3238;
+}
+
+nnav #searcherBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input[type="text"] {
+    width: 320px;
+    height: 40px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #304d89;
+}
+
+nav button {
+    height: 40px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4bf4d;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #e0a93a;
+}
+
+#navbtns a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#navbtns a:hover {
+    color: #304d89;
+}
+
+#loginBtn {
+    background-color: #af3238;
+}
+
+#loginBtn:hover {
+    background-color: #93292d;
+}
+
+#navbtns {
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/*Prins: CSS para sa pag hide ng nav bar*/
+#navbtns.hide {
+    max-height: 0;
+}
+
+/*Prins: Container ng Homepage*/
+section {
+    width: 100%;
+    padding: 50px;
+}
+
+#homepage {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hpTextContainer {
+    width: 80%;
+}
+
+#hpTextContainer h1 {
+    font-size: 150px;
+    color: #304d89;
+    cursor: pointer;
+}
+
+#hpTextContainer h1:hover {
+    font-size: 150px;
+    color: #264072;
+    cursor: pointer;
+}
+
+#hpTextContainer p {
+    font-size: 35px;
+    color: #333;
+}
+
+#exploreBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    background-color: #af3238;
+    border: 1px solid #af3238;
+    border-radius: 5px;
+}
+
+#exploreBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#exploreBtn:hover {
+    background-color: #93292d;
+}
+
+#signupBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    color: #af3238;
+    background-color: #fff;
+    border: 1px solid #af3238;
+    border-radius: 5px;
+}
+
+#signupBtn:hover {
+    background-color: #f4f4f4;
+}
+
+#signupBtn a{
+    text-decoration: none;
+    color: #af3238;
+}
+
+#updateContentBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    color: #af3238;
+    background-color: #fff;
+    border: 1px solid #af3238;
+    border-radius: 5px;
+}
+
+#updateContentBtn:hover {
+    background-color: #f4f4f4;
+}
+
+#welcome-message.updated {
+    font-size: 35px;
+    color: #f4bf4d;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#welcome-message.updated:hover {
+    color: #e0a93a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Prins: Service page 'to*/
+#servicepage {
+    padding-top: 110px;
+    background-color: #fff;
+    display: flex;
+    gap: 50px;
+}
+
+.services {
+    width: 70%;
+    padding: 40px;
+    border: 1px solid #af3238;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    
+    overflow-x: hidden;
+    position: relative;
+    
+}
+.servicesCarousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+.srvcCarousel img {
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+.srvcCarousel .p {
+    width: 350px;
+    display: inline-block;
+    
+}
+
+.srvcbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    background-color: #304d89;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+.srvcbtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.srvcbtn:hover {
+    background-color: #304d89;
+}
+
+/*Prins/dave: Para 'to sa About Us and Contact Us*/
+#acu {
+    width: 30%;
+    padding: 40px;
+    border: 1px solid #304d89;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#aboutus{
+    width:100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*Prins: CSS 'to ng mga pictures sa landing page*/
+.image, .services .srvcCarousel img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+.image.animate, .services .srvcCarousel img.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.dave{
+    width: 50%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#aboutus .image{
+    height: 150px;
+    width:  150px;
+    border-radius: 100px;
+    
+}
+#contactus{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+input[type=text],[type=email],[type=tel],textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    
+}
+
+input[type="submit"]{
+    background: #304d89;
+    color: #fff;
+    padding: 15px 50px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.lndpgbtn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Bahnschrift Condensed', sans-serif;
+    font-size: 20px;
+    color:#ddd;
+    background-color: #304d89;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    display: none;
+}
+
+/*Prins: Footer 'to*/
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #f4bf4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Prins: This is para sa Login and Signup*/
+#loginContainer, #signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+#loginForm, #signupForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#loginForm h1, #signupForm h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #304d89;
+}
+
+#loginForm p, #signupForm p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"],
+#signupForm input[type="text"], #signupForm input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+#loginForm button[type="submit"], #signupForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #304d89;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+#loginForm button[type="submit"]:hover, #signupForm button[type="submit"]:hover {
+    background-color: #304d89;
+}
+
+#loginForm #loginSIbtn, #signupForm #loginSIbtn {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+#loginForm #loginSIbtn a, #signupForm #loginSIbtn a {
+    color: #304d89;
+    text-decoration: none;
+}
+
+#loginForm #loginSIbtn a:hover, #signupForm #loginSIbtn a:hover {
+    text-decoration: underline;
+}
+
+/*Prins: Para 'to sa dark mode ng landing page*/
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+nav.dark-mode {
+    background-color: #333;
+}
+
+nav.dark-mode h1 {
+    color: #f4bf4b;
+}
+
+#homepage.dark-mode {
+    background-color: #333;
+}
+
+#homepage.dark-mode h1  {
+    color: #f4bf4b;
+}
+#homepage.dark-mode p {
+    color: #f7f7f7;
+}
+
+button.dark-mode {
+    background-color: #304d89;
+    color: #fff;
+}
+
+button.dark-mode:hover {
+    background-color: #264072;
+}
+
+#navbtns a.dark-mode {
+    color: #fff;
+}
+
+#navbtns a.dark-mode:hover {
+    color: #ddd;
+}
+
+/* For input elements in forms */
+input.dark-mode, textarea.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+input.dark-mode::placeholder, textarea.dark-mode::placeholder {
+    color: #ccc;
+}
+
+/* Specific section and footer dark mode updates */
+#servicepage.dark-mode {
+    background-color: #333;
+}
+
+footer.dark-mode {
+    background-color: #222;
+    color: #fff;
+}

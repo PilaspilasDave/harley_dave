@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bahnschrift Condensed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    gap: 18%;
+    padding: 10px 50px;
+    top: 0;
+}
+
+nav h1{
+    font-size: 50px;
+    color: #304d89;
+}
+
+nav button{
+    height: 40px;
+    font-size: 20px;
+    font-family:  Bahnschrift Condensed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#searcherBar{
+    gap: 10px;
+}
+#searchBar{
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    font-family:  Bahnschrift Condensed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #304d89;
+    box-sizing: border-box;
+}
+
+#searchBtn{
+    background-color: #f4bf4d;
+}
+
+#navbtns a{
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#navbtns a:hover{
+    color: #304d89;
+
+}
+
+#loginBtn{
+    background-color: #af3238;
+    color: #fff;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+
+#homepage{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#hpTextContainer{
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#hpTextContainer h1{
+    font-size: 150px;
+    color: #304d89;
+}
+
+#hpTextContainer p{
+    font-size: 35px;
+    color: #333;
+}
+
+#exploreBtn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#exploreBtn{
+    height: 40px;
+    font-size: 20px;
+    font-family:  Bahnschrift Condensed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #af3238;
+}
+
+#signupBtn{
+    height: 40px;
+    font-size: 20px;
+    font-family:  Bahnschrift Condensed;
+    color: #af3238;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: #af3238;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#signupBtn a{
+    color: #af3238;
+    text-decoration: none;
+}
+
+#servicepage{
+    padding-top: 110px;
+    background-color: #fff;
+    display: flex;
+    gap: 50px;
+}
+
+#services{
+    width: 70%;
+    height: 775px;
+    padding-top: 40px;
+    border-radius:  5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#af3238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#servicesCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.srvcCarousel {
+    width: 300px;
+}
+
+.srvcCarousel img{
+    width: 300px;
+}
+
+.srvcbtn{
+    height: 40px;
+    font-size: 20px;
+    font-family:  Bahnschrift Condensed;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#services a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#acu{
+    width: 30%;
+    height: 775px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #304d89;
+    border-radius:  5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutus{
+    width:85%;
+    height: 40%;
+    text-align: center;
+}
+#contactus{
+    width: 85%;
+    height: 50%;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #f4bf4d;
+}
+
+/* Container Styles */
+#loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Form Styles */
+#loginForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Heading */
+#loginForm h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+/* Form Paragraph */
+#loginForm p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+/* Input Styles */
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Forgot Password Link */
+#loginForm a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#loginForm a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #304d89;;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #5974ac;;
+}
+
+/* Navigation Links */
+#loginForm #loginSIbtn {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#loginForm #loginSIbtn a {
+    color: #304d89;;
+    text-decoration: none;
+}
+
+#loginForm #loginSIbtn a:hover {
+    text-decoration: underline;
+}
+
+
+/* Container Styles */
+#signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Form Styles */
+#signupForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Heading */
+#signupForm h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #304d89;
+}
+
+/* Form Paragraph */
+#signupForm p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666666 09811837v2ifefyfwhvvehgu;
+}
+
+/* Input Styles */
+#signupForm input[type="text"],
+#signupForm input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+#signupForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#signupForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Navigation Links */
+#signupForm #loginSIbtn {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#signupForm #loginSIbtn a {
+    color: #304d89;;
+    text-decoration: none;
+}
+
+#signupForm #loginSIbtn a:hover {
+    text-decoration: underline;
+}
+
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 16px;
+    color: #333;
+}
+
+#messageBox {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#messageBox h2 {
+    color: #345b94;
+    margin-bottom: 20px;
+}
+
+#messageBox form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#messageBox form label {
+    color: #333;
+    font-weight: bold;
+}
+
+#messageBox form input,
+#messageBox form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#messageBox form input[type="text"],
+#messageBox form input[type="email"] {
+    height: 40px;
+}
+
+#messageBox form textarea {
+    resize: vertical;
+}
+
+#messageBox form button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #345b94;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#messageBox form button:hover {
+    background-color: #2b4978;
+}
+
+
+
+
+
